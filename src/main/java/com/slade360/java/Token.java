@@ -43,7 +43,7 @@ public class Token {
             wr.close();
 
             int responseCode = con.getResponseCode();
-            String responseData =  " ";
+            String responseData;
             if (responseCode == HttpURLConnection.HTTP_OK) {
                 BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
                 String inputLine;
