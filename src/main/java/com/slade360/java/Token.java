@@ -59,6 +59,7 @@ public class Token {
                     ObjectMapper objectMapper = new ObjectMapper();
                     JsonNode jsonNode = objectMapper.readTree(responseData);
                     String accessToken = jsonNode.get("access_token").asText();
+
                     callback.onTokenReceived(accessToken);  // Invoke the callback
                 } catch (IOException e) {
                     e.printStackTrace();
