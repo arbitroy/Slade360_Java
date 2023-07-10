@@ -22,7 +22,6 @@ public class memberEligibility {
         String responseBody = reader.readLine();
         reader.close();
         return responseBody;
-
     }
 
 }
